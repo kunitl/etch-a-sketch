@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  flex-shrink: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 256px;
+}
+
+.square {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid black;
+}
