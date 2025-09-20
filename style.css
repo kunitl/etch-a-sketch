@@ -1,31 +1,31 @@
+/* CSS Reset - Remove default browser styles */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  box-sizing: border-box; /* Include padding and border in element's total width/height */
+  padding: 0;             /* Remove default padding */
+  margin: 0;              /* Remove default margin */
 }
 
+/* Main body layout and positioning */
 body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
+  height: 100vh;          /* Full viewport height */
+  display: flex;          /* Use flexbox layout */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center;/* Center content vertically */
+  align-items: center;    /* Center content horizontally */
+  gap: 50px;              /* Add space between button container and grid */
 }
 
+/* Drawing grid container */
 .container {
-  flex-shrink: 0;
-  display: flex;
-  flex-wrap: wrap;
+  flex-shrink: 0;         /* Prevent container from shrinking */
+  display: flex;          /* Use flexbox for grid squares */
+  flex-wrap: wrap;        /* Allow squares to wrap to next row */
 }
 
+/* Individual grid squares */
 .square {
-  flex-shrink: 0;
-  border: 1px solid black;
-}
-
-.bgColor {
-  background-color: black;
+  flex-shrink: 0;         /* Prevent squares from shrinking */
+  border: 1px solid rgba(0, 0, 0, 0.1);/* Add visible border to each square */
 }
